@@ -1,0 +1,54 @@
+#container{
+	background-color: #fcfcfc;
+	min-height: 1024px;
+}
+
+#ht-logo{
+	width: 170px;
+	height: 77px;
+}
+
+header{
+	background-color: #fff;
+}
+
+nav.ht-navbar.navbar.navbar-expand-lg{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.ht-step-label{
+	display: inline-block;
+	padding: 5px;
+	font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+}
+
+.ht-steps{
+	box-sizing: border-box;
+    padding-bottom: 25px;
+    border-bottom: solid 3px #169bd5;
+}
+
+hr.blue-line{
+	background-color: #169bd5;
+	margin: 0px;
+	height: 2px;
+	margin-top: 20px;
+}
+
+.ht-step{
+	display: inline-block;
+	height: 100%;
+}
+
+.ht-step>span{
+	margin-left: 10px;
+}
+
+button.ht-search{
+	background: url(../img/search.png) no-repeat;
+    height: 30px;
+    width: 30px;
+}
