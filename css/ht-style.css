@@ -179,6 +179,7 @@ footer>p{
 	border: solid 1px #ff6600;
     border-radius: 26px;
     padding: 0;
+    background-color: #fff;
 }
 
 header a.nav-link.ht-register{
@@ -231,4 +232,17 @@ header a.nav-link.ht-current{
 	font-weight: bold;
 	color: red;
 	padding: 0 20px;
+}
+
+i.fas{
+	padding: 5px;
+}
+
+header li.nav-item{
+	margin: 0 5px;
+}
+
+.ht-support i.fa-envelope{
+	zoom: 2.3;
+	color: #ff6600; 
 }
