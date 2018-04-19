@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>FreeStyle</title>
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.js"></script>
 	<link rel="stylesheet" href="css/ht-style.css">
 	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -66,10 +67,10 @@
 			</div>
 		</section>
 		<section>
-			<div class="container" style="margin-bottom: 20px;">
+			<div class="container-fluid" style="margin-bottom: 20px;">
 				<div class="row ht-steps">
 					<hr class="blue-line" style="width: 5%">
-					<p class="ht-step-label" style="width: 15%">4 Bước đơn giản</p>
+					<p class="ht-step-label" style="width: 15%;">4 Bước đơn giản</p>
 					<hr class="blue-line" style="width: 80%">
 					<div class="ht-step col-sm-3">
 						<img src="img/step1.png" alt="">
@@ -90,16 +91,97 @@
 				</div>
 			</div>
 		</section>
-		<div class="container">
-			<aside>
-				<form class="form-inline my-2 my-lg-0">
-			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn my-2 my-sm-0 ht-search" type="submit"></button>
-			    </form>
-			</aside>
+
+		<div class="container-fluid" style="margin-top: 35px; padding: 0 60px;">
+			<div class="row">
+				<aside class="col-sm-3">
+					<form class="form-inline my-2 my-lg-0 ">
+				      <input class="form-control mr-sm-2 ht-search-bar" type="search" placeholder="Search" aria-label="Search">
+				      <button class="btn my-2 my-sm-0 ht-search" type="submit"></button>
+				    </form>
+					<ul class="ht-category">
+						<li class="ht-head-category">DANH MỤC SẢN PHẨM</li>
+						<a href="#"><li class="ht-category-item">Áo cổ trụ</li></a>
+						<a href="#"><li class="ht-category-item">Áo cổ tròn</li></a>
+						<a href="#"><li class="ht-category-item">Áo thể thao</li></a>
+						<a href="#"><li class="ht-category-item">Áo khoác</li></a>
+						<a href="#"><li class="ht-category-item">Áo cặp</li></a>
+						<a href="#"><li class="ht-category-item">Áo thun ba lỗ</li></a>
+						<a href="#"><li class="ht-category-item">Sản phẩm khác</li></a>
+					</ul>
+					<h3 style="color: #0033ff; text-shadow: 2px 4px #e1e1e1; text-align: center;">
+						Tư vấn - <span style="color: #ff6600;">đặt áo</span>
+					</h3>
+					<div class="ht-contact">
+						<div class="ht-contact-item">
+							<img src="img/phone.png" style="padding-right: 10px;" alt="phone">
+							<span>016777 - Miễn phí</span>
+						</div>
+						<div class="ht-contact-item">
+							<img src="img/chat.png" style="padding-right: 10px;" alt="chat">
+							<span>Chat với chúng tôi</span>
+						</div>
+						<div class="ht-contact-item">
+							<img src="img/mail.png" style="padding-right: 10px;" alt="mail">
+							<span>tuvan@freestyle.vn</span>
+						</div>
+					</div>
+				</aside>
+				<section class="col-sm-9 container" >
+					<div class="row" style="margin-left: 10px; padding-bottom: 10px; border-bottom: solid 0.5px darkgray;">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-4 ht-title">Sản phẩm tiêu biểu</div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-5">
+							<div class="dropdown show" style="width: 100%;">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 70%; padding: 0;"> Sắp xếp theo </a>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width: 70%; text-align: center;">
+							    <a class="dropdown-item" href="#">Độ phổ biến</a>
+							    <a class="dropdown-item" href="#">Giá từ thấp đến cao</a>
+							    <a class="dropdown-item" href="#">Giá từ cao đến thấp</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-left: 10px; padding-top: 40px;">
+						<div class="card col-sm-6 ht-card">
+						  <img class="card-img-top ht-card-img" src="img/sample1.jpg" alt="Card image cap">
+						  <div class="card-body">
+						    <p class="card-text">Áo thun cặp - I Love You</p>
+						  </div>
+						</div>
+						<div class="card col-sm-6 ht-card">
+						  <img class="card-img-top ht-card-img" src="img/sample2.jpg" alt="Card image cap">
+						  <div class="card-body">
+						    <p class="card-text">Áo thun cổ tròn - TSMT</p>
+						  </div>
+						</div>
+					</div>
+					<div class="row" style="margin-left: 10px; padding-top: 40px;">
+						<div class="card col-sm-6 ht-card">
+						  <img class="card-img-top ht-card-img" src="img/sample3.jpg" alt="Card image cap">
+						  <div class="card-body">
+						    <p class="card-text">Áo thun cổ tròn - Phượt thủ</p>
+						  </div>
+						</div>
+						<div class="card col-sm-6 ht-card">
+						  <img class="card-img-top ht-card-img" src="img/sample4.jpg" alt="Card image cap">
+						  <div class="card-body">
+						    <p class="card-text">Áo thun tay dài - Thư pháp</p>
+						  </div>
+						</div>
+					</div>
+					<div class="row" style="margin-left: 10px;">
+						<button class="btn btn-primary col-sm-1 offset-sm-5">Xem thêm</button>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="ht-support">
+			<a href=""><img src="img/support.png" alt="support"></a>
 		</div>
 		<footer>
-			<p></p>
+			<p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
 		</footer>
 	</div>
 </body>
