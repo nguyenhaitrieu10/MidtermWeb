@@ -9,6 +9,7 @@
 
 header{
 	background-color: #fff;
+	margin-bottom: 2px;
 }
 
 header a.nav-link{
@@ -35,7 +36,6 @@ nav.ht-navbar.navbar.navbar-expand-lg{
 	box-sizing: border-box;
     padding-bottom: 25px;
     border-bottom: solid 3px #169bd5;
-    text-align: center;
 }
 
 hr.blue-line{
@@ -70,6 +70,10 @@ button.ht-search-shopping{
     box-sizing: border-box;
 }
 
+input#ht-search {
+    	width: 100%;
+}
+
 @media (max-width: 1128px)
 {
 	button.btn.my-2.my-sm-0.ht-search{
@@ -77,9 +81,6 @@ button.ht-search-shopping{
 	}
 	button.btn.my-2.my-sm-0.ht-search-shopping{
 		display: none;
-	}
-	input#ht-search {
-    	width: 100%;
 	}
 }
 
@@ -92,8 +93,9 @@ input.form-control.mr-sm-2.ht-search-shopping{
 }
 
 .ht-head-category{
-	background-color: #f2f2f2;
+	background-color: #343a40;
 	border: solid 1px  #169bd5;
+	color: #fff;
 }
 
 ul.ht-category{
@@ -137,6 +139,7 @@ img.ht-card-img{
 div.ht-card{
 	text-align: center;
 	border: none;
+	padding: 0 5px;
 }
 
 p.card-text{
@@ -146,7 +149,7 @@ p.card-text{
 }
 
 button.btn.btn-outline-primary.col-sm-1.offset-sm-5 {
-    max-width: 15%;
+    max-width: 100%;
 }
 
 .ht-contact{
@@ -226,12 +229,16 @@ header a.nav-link.ht-current{
 	color: #000;
 	font-weight: bold;
 	padding: 0;
+	margin: 0;
+	height: 42px;
+	overflow: hidden;
+	font-size: 14px;
 }
 
 .ht-saleoff{
 	font-weight: bold;
 	color: red;
-	padding: 0 20px;
+	padding: 0 5px;
 }
 
 i.fas{
@@ -245,4 +252,69 @@ header li.nav-item{
 .ht-support i.fa-envelope{
 	zoom: 2.3;
 	color: #ff6600; 
+}
+
+#container a:hover{
+	text-decoration: none;
+}
+
+@media (max-width: 767px){
+	.ht-step.col-md-3.col-sm-12{
+		    padding: 5%;
+    		padding-left: 40%;
+	}
+
+}
+
+@media (max-width: 992px){
+	.ht-aside{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+		.ht-contact-item{
+		padding-left: 35%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+	.ht-step.col-md-3.col-sm-12>span{
+		display: block;
+	}
+}
+
+p.ht-info-cost{
+	margin: 0;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+header .navbar-brand{
+	padding: 1px;
+}
+
+header#ht-navbar{
+	position: fixed;
+	width: 100%;
+	border-bottom: solid 1px darkgray;
+	z-index: 1000000;
+}
+
+.ht-checkbox{
+	font-size: 13px;
+}
+
+.ht-title-check{
+	padding-top: 20px;
+}
+
+input[name="type-tshirt"], input[name="color-tshirt"], input[name="sleeve-tshirt"]{
+	margin-right: 5px;
+}
+
+section#ht-type-tshirt, section#ht-color-tshirt, section#ht-sleeve-tshirt{
+	padding-left: 30px;
+}
+
+.card-body>p{
+	padding:0;
 }
