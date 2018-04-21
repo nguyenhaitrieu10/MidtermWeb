@@ -260,8 +260,8 @@ header li.nav-item{
 
 @media (max-width: 767px){
 	.ht-step.col-md-3.col-sm-12{
-		    padding: 5%;
-    		padding-left: 40%;
+	    padding: 5%;
+		padding-left: 35%;
 	}
 
 }
@@ -271,7 +271,7 @@ header li.nav-item{
 		width: 100%;
 		padding-bottom: 20px;
 	}
-		.ht-contact-item{
+	.ht-contact-item{
 		padding-left: 35%;
 	}
 }
@@ -279,6 +279,9 @@ header li.nav-item{
 @media (min-width: 768px) and (max-width: 960px){
 	.ht-step.col-md-3.col-sm-12>span{
 		display: block;
+	}
+	.ht-contact-item{
+		padding-left: 15%;
 	}
 }
 
@@ -317,4 +320,115 @@ section#ht-type-tshirt, section#ht-color-tshirt, section#ht-sleeve-tshirt{
 
 .card-body>p{
 	padding:0;
+}
+
+p.ht-card-p{
+	font-size: 13px;
+	overflow: hidden;
+	height: 42px;
+}
+
+@media (max-width: 575px){
+	aside#ht-filter{
+		width: 100%;
+	}
+	div.ht-contact-item{
+		padding-left: 30%;
+	}
+}
+
+.ht-button{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: 100;
+    width: 25%;
+	padding-right: 5%;
+    text-align: center;
+}
+
+.ht-button>button{
+	width: 180px;
+    height: 45px;
+    color: #000;
+    border: solid 1px #000;
+    font-weight: bold;
+    font-size: 18px;
+	box-shadow: 4px 4px;
+	text-align: center;
+}
+
+.ht-button>h4{
+	font-weight: bold;
+	color: #fff;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+}
+
+.ht-button>p{
+	color: #fff;
+	text-align: center;
+    text-shadow: 1px 1px #000;	
+}
+
+@media (max-width: 1125px)
+{
+	.ht-button{
+	    top: 20%;
+	}
+}
+
+@media (max-width: 991px){
+	.ht-button>p{
+		display: none;
+	}
+	.ht-button>h4{
+		display: none;
+	}
+	.ht-button{
+	    top: 30%;
+	}
+
+}
+
+@media (max-width: 892px){
+	.ht-button{
+		display: none;
+	}	
+}
+
+.ht-img-lg>img{
+	width: 100%;
+	min-height: 400px;
+}
+
+.ht-info-detail{
+	text-align: left;
+}
+
+.ht-info-detail>p{
+	padding-left: 0;
+}
+
+.ht-more-info{
+	padding: 35px;
+}
+
+.ht-more-info>p{
+	padding: 0px;
+}
+
+.ht-img-lg>img{
+	margin: 20px;
+    padding: 10px;
+    border: solid 1px;
+}
+
+.ht-info-detail.col-lg-6.col-sm-12{
+	padding: 20px 40px;
+}
+
+p.ht-real-cost{
+	color: #007bff;
+	padding: 0;
 }
