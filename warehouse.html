@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free Style</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/ht-style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="css/ht-rating.css">
+    <link rel="stylesheet" href="css/hl-style.css">
+</head>
+
+<body>
+    <div id="container" style="min-height: 500px;">
+        <header id="ht-navbar">
+            <nav class="ht-navbar navbar navbar-expand-lg container">
+                <a class="navbar-brand" href="#">
+                    <img id="ht-logo" src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link ht-current" href="#">
+                                <i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart"></i>Mua sắm</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 10px;">
+                            <a class="nav-link" href="#">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ht-register" href="#">Đăng ký</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div id="hl-store" class="default">
+                <ul class="nav nav-tabs" role="tablist" width="100%">
+                    <li class="hl-tab-store hl-active-tab">
+                        <a href="#">Add Shirt</a>
+                    </li>
+                    <li class="hl-tab-store">
+                        <a href="#">Warehouse Statistics</a>
+                    </li>
+                </ul>
+
+                <div id="hl-viewzone-store">
+                    <table id="hl-table-store" class="table hl-table hl-hidden">
+                        <thead>
+                            <tr class="hl-border">
+                                <th class="hl-border">Loại áo</th>
+                                <th class="hl-border">Hình ảnh</th>
+                                <th class="hl-border">Số lượng</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="hl-border ax_default hl-table-text">
+                                    <p class="ax_default hl-table-text">Áo xám</p>
+                                </td>
+                                <td class="hl-border">
+                                    <img src="img/p0.JPG" class="hl-slide-menu">
+                                </td>
+                                <td class="hl-border">
+                                    <p class="ax_default hl-table-text">46</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hl-border ax_default hl-table-text">
+                                    <p class="ax_default hl-table-text">Áo xanh nhạt</p>
+                                </td>
+                                <td class="hl-border">
+                                    <img src="img/p1.JPG" class="hl-slide-menu">
+                                </td>
+                                <td class="hl-border">
+                                    <p class="ax_default hl-table-text">64</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hl-border ax_default hl-table-text">
+                                    <p class="ax_default hl-table-text">Áo trắng</p>
+                                </td>
+                                <td class="hl-border">
+                                    <img src="img/p2.JPG" class="hl-slide-menu">
+                                </td>
+                                <td class="hl-border">
+                                    <p class="ax_default hl-table-text">78</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hl-border ax_default hl-table-text">
+                                    <p class="ax_default hl-table-text">Áo xanh đậm</p>
+                                </td>
+                                <td class="hl-border">
+                                    <img src="img/p3.JPG" class="hl-slide-menu">
+                                </td>
+                                <td class="hl-border">
+                                    <p class="ax_default hl-table-text">35</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hl-border ax_default hl-table-text">
+                                    <p class="ax_default hl-table-text">Áo đen</p>
+                                </td>
+                                <td class="hl-border">
+                                    <img src="img/p4.JPG" class="hl-slide-menu">
+                                </td>
+                                <td class="hl-border">
+                                    <p class="ax_default hl-table-text">55</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="hl-add-shirt">
+                    <div class="hl-add-shirt-zone">
+                        <div class="hl-addimg-box">
+                            <input type="image" id="hl-addshirt" alt="Thêm ảnh" class="hl-addimg">
+                        </div>
+                    </div>
+                    <div class="hl-viewzone-addshirt">
+                        <div id="hl-view-shirtadd">
+                            <img id="hl-shirtadd" src="img\p0.JPG">
+                        </div>
+                        <ul class="nav nav-tabs hl-ctrls-store" role="tablist">
+                            <li class="hl-ctrl-store">
+                                <img src="img\other.png">
+                            </li>
+                            <li class="hl-ctrl-store">
+                                <img src="img\add.png">
+                            </li>
+                            <li class="hl-ctrl-store">
+                                <img src="img\cancel.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
+    </footer>
+
+</body>
+
+</html>
