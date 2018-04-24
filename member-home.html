@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
 </head>
 <body>
 	<div id="container">
@@ -29,11 +30,20 @@
 			      <li class="nav-item">
 			        <a class="nav-link" href="./shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
 			      </li>
-			      <li class="nav-item"  style="margin-left: 10px;">
-			        <a class="nav-link" href="./member-home.html">Đăng nhập</a>
+			      <li class="nav-item ht-shopping-basket">
+			        <a class="nav-link" href="./shopping.html"><i class="fas fa-shopping-basket"></i>Đơn hàng<span class="badge badge-light">2</span></a>
 			      </li>
-			      <li class="nav-item ht-signup">
-			        <a class="nav-link ht-register" href="#">Đăng ký</a>
+			      <li class="nav-item dropdown ht-avatar" style="margin-left: 10px;">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          <i class="fas fa-user"></i>Triều
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Giỏ Hàng</a>
+			          <a class="dropdown-item" href="#">Sản phẩm yêu thích</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Tài khoản</a>
+			          <a class="dropdown-item" href="home.html">Thoát</a>
+			        </div>
 			      </li>
 			    </ul>
 			  </div>
@@ -225,8 +235,54 @@
 			</div>
 		</div>
 		<div class="ht-support">
-			<a href=""><i class="fas fa-envelope"></i></a>
+			<i class="fas fa-envelope"></i>
 		</div>
+		<div class="container ht-support-chat">
+			    <div class="row">
+			        <div class="col-xs-12 ">
+			            <div class="panel panel-primary">
+			                <div class="panel-heading">
+			                    <span class="glyphicon glyphicon-comment">Tin nhắn</span>
+			                    <span class="pull-right ht-close-chat"><i class="fas fa-minus"></i></span> 
+			                </div>
+			                <div class="panel-body body-panel">
+			                    <ul class="chat" style="    padding: 5px;">
+			                        <li class="left clearfix">
+			                        	<span class="chat-img pull-left">
+			                            	<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+			                       		</span>
+			                            <div class="chat-body clearfix">
+			                                <div class="header">
+			                                    <strontg class="primary-font">Hỗ trợ</strong> <small class="pull-right text-muted">
+			                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+			                                </div>
+			                                <p>
+			                                    Xin chào! Nếu bạn quan tâm đến sản phẩm của FreeStyle.vn, hãy để lại lời nhắn, chúng mình sẽ trả lời ngay nhé!
+			                                </p>
+			                            </div>
+			                        </li>
+			                        <li class="right clearfix"><span class="chat-img pull-right">
+			                            <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+			                        </span>
+			                            <div class="chat-body clearfix">
+			                                <div class="header">
+			                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+			                                    <strong class="pull-right primary-font">Triều</strong>
+			                                </div>
+			                                <p>
+			                                    liu liu
+			                                </p>
+			                            </div>
+			                        </li>
+			                    </ul>
+			                </div>
+			                <div class="panel-footer clearfix">
+			                    <textarea class="form-control" style="height: 50px; border-radius: 0;" rows="3"></textarea>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
 		<footer>
 			<p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
 		</footer>

@@ -8,49 +8,43 @@
     <script src="js/popper.js"></script>
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/mm-style.css">
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/mm-script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="css/ht-style.css">
+
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" style="height: 100%;">
         <header id="ht-navbar">
             <nav class="ht-navbar navbar navbar-expand-lg container">
-                <a class="navbar-brand" href="#">
-                    <img id="ht-logo" src="img/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-paint-brush"></i>Tự thiết kế</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-shopping-cart"></i>Mua sắm</a>
-                        </li>
-                        <li class="nav-item" style="margin-left: 10px;">
-                            <a class="nav-link" href="#">Đăng nhập</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ht-register" href="#">Đăng ký</a>
-                        </li>
-                    </ul>
-                </div>
+              <a class="navbar-brand" href="./home.html"><img id="ht-logo" src="img/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ht-current" href="./shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
+                  </li>
+                  <li class="nav-item"  style="margin-left: 10px;">
+                    <a class="nav-link" href="#">Đăng nhập</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ht-register" href="#">Đăng ký</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
         </header>
-
-        <div class="container">
-            <section>
+        <div class="container" style="padding-top: 100px; min-height: 90%;  width: 100%">
+            <section style="margin-top: 0">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6" id="left-panel">
@@ -77,7 +71,7 @@
 
                         <div class="col-md-6>">
                             <h3>Thông tin thanh toán</h3>
-                            <form action="">
+                            <form class="mm-agree">
                                 <div class="form-group">
                                     <label for="text">Họ tên:</label>
                                     <input type="text" class="form-control" id="name">
@@ -101,14 +95,14 @@
                                             <input type="radio" name="option2"> Thanh toán bằng thẻ quốc tế/ nội địa</label>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-default">Đồng ý thanh toán</button>
+                                <button type="submit" class="btn btn-default ht-agree">Đồng ý thanh toán</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <footer>
+        <footer style="min-height: 10%;">
             <p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
         </footer>
     </div>

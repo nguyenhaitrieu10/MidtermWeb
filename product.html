@@ -7,7 +7,7 @@
 	<script src="js/popper.js"></script>
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<link rel="stylesheet" href="css/ht-style.css">
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/ht-script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -17,22 +17,22 @@
 	<div id="container" style="background-color: #f9f9f9;">
 		<header id="ht-navbar">
 			<nav class="ht-navbar navbar navbar-expand-lg container">
-			  <a class="navbar-brand" href="#"><img id="ht-logo" src="img/logo.png" alt=""></a>
+			  <a class="navbar-brand" href="./home.html"><img id="ht-logo" src="img/logo.png" alt=""></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="#"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+			        <a class="nav-link" href="./design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
+			        <a class="nav-link ht-current" href="./shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
 			      </li>
-			      <li class="nav-item ht-login"  style="margin-left: 10px;">
+			      <li class="nav-item"  style="margin-left: 10px;">
 			        <a class="nav-link" href="#">Đăng nhập</a>
 			      </li>
-			      <li class="nav-item ht-signup">
+			      <li class="nav-item">
 			        <a class="nav-link ht-register" href="#">Đăng ký</a>
 			      </li>
 			    </ul>
@@ -42,17 +42,38 @@
 		<section class="container" style="padding-top: 62px;">
 			<div class="row" style="margin-top: 30px; background-color: #fff;">
 				<div class="ht-img-lg col-lg-6 col-sm-12">
-					<img src="img/detail-sample.jpg" alt="">
+					<img src="img/detail-sample.jpg" alt="" style="width:75%; height:50%;">
 				</div>
 				<div class="ht-info-detail col-lg-6 col-sm-12">
 					<h3>Áo thun nam trắng - League Legends</h3>
-					<h6>Mã sản phẩm: AO001</h6>
-					<h6>Nhà sản xuất: TML company</h6>
-					<h6>Tình trạng: còn hàng</h6>
+					<h6 style="color:gray; margin-left: 10px">Mã sản phẩm: <span style="color:blue">AO001</span></h6>
+					<h6 style="color:gray; margin-left: 10px">Nhà sản xuất: <span style="color:blue"> TML company</span></h6>
+					<h6 style="color:gray; margin-left: 10px">Tình trạng: <span style="color:blue"> còn hàng</span></h6>
 					<div>
-						<h5 class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></h5>
-						<p class="ht-real-cost">144.000 đ</p>
+						<h3 class="ht-info-cost">
+							<span class="ht-real-cost" style="color:#ff6600">144.000đ</span> <strike style="color:lightgray; font-size:0.67em">207.000đ</strike><span class="ht-saleoff" style="font-size:0.67em">-30%</span>
+							<br/>
+						</h3>
 					</div>
+					<h5 style="margin-top: 20px;  font-size:1em">Chọn kích cỡ: </h5>
+					<div style=" margin-left: 10px">
+						<button style="background-color:transparent;color:#189eff;border: 2px solid #189eff;border-radius: 5px;">Size M</button>
+						<button style="background-color:transparent;color:#189eff;border: 2px solid #189eff;border-radius: 5px;">Size L</button>
+						<button style="background-color:transparent;color:#189eff;border: 2px solid #189eff;border-radius: 5px;">Size XL</button>
+						<button style="background-color:transparent;color:#189eff;border: 2px solid #189eff;border-radius: 5px;">Size XXL</button>
+					</div>
+					<h5 style="margin-top: 10px; font-size:1em">Chọn màu:</h5>
+					<div style=" margin-left: 10px">
+						<button style="background-color:white;color:green;border: 2px solid black;border-radius: 5px;padding: 10px"> </button>
+						<button style="background-color:green;color:green;border: 2px solid green;border-radius: 5px;padding: 10px"> </button>
+						<button style="background-color:red;color:red;border: 2px solid red;border-radius: 5px;padding: 10px"> </button>
+						<button style="background-color:blue;color:blue;border: 2px solid blue;border-radius: 5px;padding: 10px"> </button>
+						<button style="background-color:yellow;color:yellow;border: 2px solid yellow;border-radius: 5px;padding: 10px"> </button>
+					</div>
+					<h5><br/>Số lượng: <input type="number" name="quantity" style="width: 60px; height:30px; padding-left: 10px; margin-left: 20px"></h5>
+					<button class="btn btn-primary ht-add-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
+
+					<h6 style="color:gray; margin-top:30px"><i class="ht-rating fas fa-heart" style="color:red;"></i>55 người quan tâm đến sản phẩm này</h6>
 				</div>
 			</div>
 			<div class="row ht-more-info" style="background-color: #fff; margin-top: 16px;">
