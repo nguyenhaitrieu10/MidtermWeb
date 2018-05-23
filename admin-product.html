@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Free Style</title>
+	<script src="js/popper.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/admin-home.css">
+	<link rel="stylesheet" href="css/morris.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="css/table-style.css" />
+	<link rel="stylesheet" type="text/css" href="css/basictable.css" />
+	<script type="text/javascript" src="js/Chart.js"></script>
+	<script type="text/javascript" src="js/ht-script.js"></script>
+</head>
+<body>
+  <div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="mother-grid-inner">
+            <!--header start here-->
+			<div class="header-main" style="padding: 0.5em;">
+				<div class="logo-w3-agile">
+					<a href="./admin-home.html"><img src="img/logo.png" style="height: 50px;"></a>
+				</div>
+				<div class="profile_details w3l" style="height: 70px; float: right;">		
+					<ul>
+						<li class="dropdown profile_details_drop">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+								<div class="profile_img">	
+									<span class="prfil-img" ><img style="background-color: #fff;" src="img/admin.png" alt=""> </span> 
+									<div class="user-name">
+										<p>Admin</p>
+									</div>
+									<div class="clearfix"></div>	
+								</div>	
+							</a>
+							<ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenuButton" style="text-align: center;">
+								<!-- <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>  -->
+								<li> <a href="./admin-user-info.html"> Tài khoản</a> </li> 
+								<li> <a href="./admin-login.html">Đăng xuất</a> </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				 <div class="w3layouts-right" style="height: 70px; float: right; background-color: #ff9501">
+					<div class="profile_details_left"><!--notifications of menu start -->
+						<ul class="nofitications-dropdown">
+							<li class="dropdown	 head-dpdn">
+								<a href="./admin-user.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-bell"></i>
+									<span class="badge blue">3</span>
+								</a>
+							</li>	
+							<li class="dropdown head-dpdn">
+								<a href="./admin-order.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-tasks"></i>
+									<span class="badge blue1">9</span>
+								</a>
+							</li>	
+							<div class="clearfix"> </div>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<!--notification menu end -->
+					<div class="clearfix"> </div>				
+				</div>
+			    <div class="clearfix"> </div>	
+			</div>
+			<!--heder end here-->
+<!-- 			<ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href=".html">Home</a><i class="fa fa-angle-right"></i>Tabels</li>
+            </ol> -->
+
+			<section class="container">
+			<div class="row" style="margin-top: 30px; background-color: #fff;">
+				<div class="ht-img-lg col-lg-6 col-sm-12 hvr-grow">
+					<img src="img/detail-sample.jpg" alt="" style="width:100%; height:75%;">
+					<form>
+					  <div class="form-group">
+					    <label for="exampleFormControlFile1">Chọn ảnh đại diện</label>
+					    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+					  </div>
+					</form>
+				</div>
+				<div class="ht-info-detail col-lg-6 col-sm-12">
+					<h5>Tên sản phẩm:</h5>
+					<input type="text" value="Áo thun nam trắng - League Legends" style="width: 100%;">
+					<h6 style="color:gray; margin-left: 10px">Mã sản phẩm:</h6>
+					<input type="text" value="AO001" style="width: 100%;">
+					<h6 style="color:gray; margin-left: 10px">Nhà sản xuất:</h6>
+					<input type="text" value="TML company" style="width: 100%;">
+					<h6 style="color:gray; margin-left: 10px">Tình trạng:</h6>
+					<input type="text" value="còn hàng" style="width: 100%;">
+					<h6 style="color:gray; margin-left: 10px">Gía (VND):</h6>
+					<input type="text" value="207.000" style="width: 100%;">
+					
+					<h5 style="margin-top: 20px;  font-size:1em">Chọn các kích cỡ: </h5>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					  <label class="form-check-label" for="inlineCheckbox1">S</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+					  <label class="form-check-label" for="inlineCheckbox2">M</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+					  <label class="form-check-label" for="inlineCheckbox3">L</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+					  <label class="form-check-label" for="inlineCheckbox4">XL</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+					  <label class="form-check-label" for="inlineCheckbox5">XXL</label>
+					</div>
+					<h5><br/>Số lượng: <input type="number" name="quantity" style="width: 60px; height:30px; padding-left: 10px; margin-left: 20px"></h5>
+					<button class="btn btn-primary ht-add-cart" id="ht-save-product">Lưu thay đổi</button>
+
+				</div>
+			</div>
+			<div class="row ht-more-info" style="background-color: #fff; margin-top: 16px;">
+				<h5 style="width: 100%;">Mô tả:</h5>
+				<textarea style="width: 100%; height: 200px; overflow: scroll; padding: 10px; margin: 10px">
+Với thiết kế trẻ trung, năng động, áo thun League Legends sẽ tạo cho khách hàng của bạn cảm giác thoải mái nhất khi mặc.
+Sản phẩm được làm từ chất liệu thun cotton thoáng mát và đàn hồi cực tốt giúp tạo cảm giác thoải mái nhất cho người mặc mà gía thành lại không quá cao. Những thiết kế riêng và logo được các bạn đưa ra sẽ được in miễn phí lên áo với những công nghệ in hàng đầu, đảm bảo hình in sắc nét, bền màu và làm nổi bật mục tiêu marketing của công ty  bạn ngay từ cái nhìn đầu tiên.
+				</textarea>
+			</div>
+		</section>
+			<div class="copyrights">
+				 <p>&copy; 2018 Free Style . All Rights Reserved | Design by TMP team </p>
+			</div>	
+		</div>
+	</div>
+  <!--//content-inner-->
+
+		<!--/sidebar-menu-->
+	<div class="sidebar-menu">
+        <header class="logo1">
+            <h5 style="color: #fff; margin: 0;"> Quản lí </h5> 
+        </header>
+        <div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
+               <div class="menu">
+                    <ul id="menu" >
+                        <li><a href="./admin-home.html">
+                            <i class="fa fa-signal"></i> <span>Thống kê</span><div class="clearfix"></div></a>
+                        </li>
+                         <li id="menu-academico" >
+                            <a href="./admin-order.html"><i class="fas fa-th-list"></i></i><span>Đơn hàng</span><div class="clearfix"></div></a>
+                         </li>
+                        <li>
+                            <a href="./admin-store.html"><i class="fas fa-dolly-flatbed"></i><span>Kho sản phẩm</span><div class="clearfix"></div></a>
+                        </li>
+                        <li id="menu-academico" >
+                            <a href="./admin-user.html"><i class="fas fa-users"></i><span>Người dùng</span><div class="clearfix"></div></a>
+                        </li>
+                         <li id="menu-academico" >
+                            <a href="./admin-history.html"><i class="fas fa-history"></i><span>Lịch sử giao dịch</span><div class="clearfix"></div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="clearfix"></div>        
+    </div>
+</body>
+</html>

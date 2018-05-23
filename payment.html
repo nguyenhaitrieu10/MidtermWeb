@@ -14,30 +14,40 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="css/ht-style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/hover-button.css">
+    <link rel="stylesheet" href="css/hover-min.css">
 </head>
 
 <body>
     <div id="container" style="height: 100%;">
         <header id="ht-navbar">
             <nav class="ht-navbar navbar navbar-expand-lg container">
-              <a class="navbar-brand" href="./home.html"><img id="ht-logo" src="img/logo.png" alt=""></a>
+              <a class="navbar-brand" href="./member-home.html"><img id="ht-logo" src="img/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+                  <li class="nav-item hvr-underline-reveal">
+                    <a class="nav-link" href="./member-design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link ht-current" href="./shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
+                  <li class="nav-item hvr-underline-reveal">
+                    <a class="nav-link" href="./member-shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
                   </li>
-                  <li class="nav-item"  style="margin-left: 10px;">
-                    <a class="nav-link" href="#">Đăng nhập</a>
+                  <li class="nav-item ht-shopping-basket hvr-underline-reveal">
+                    <a class="nav-link" href="./shopping.html"><i class="fas fa-shopping-basket"></i>Đơn hàng<span class="badge badge-light">2</span></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link ht-register" href="#">Đăng ký</a>
+                  <li class="nav-item dropdown ht-avatar " style="margin-left: 10px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-user"></i>Triều
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Giỏ Hàng</a>
+                      <!-- <a class="dropdown-item" href="#">Sản phẩm yêu thích</a> -->
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Tài khoản</a>
+                      <a class="dropdown-item" href="home.html">Thoát</a>
+                    </div>
                   </li>
                 </ul>
               </div>

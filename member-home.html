@@ -12,6 +12,8 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/hover-button.css">
+    <link rel="stylesheet" href="css/hover-min.css">
 </head>
 <body>
 	<div id="container">
@@ -23,37 +25,37 @@
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item">
+			      <li class="nav-item hvr-underline-reveal">
 			        <a class="nav-link" href="./member-design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
 			      </li>
-			      <li class="nav-item">
+			      <li class="nav-item hvr-underline-reveal">
 			        <a class="nav-link" href="./member-shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
 			      </li>
-			      <li class="nav-item ht-shopping-basket">
-			        <a class="nav-link" href="./member-shopping.html"><i class="fas fa-shopping-basket"></i>Đơn hàng<span class="badge badge-light">2</span></a>
+			      <li class="nav-item ht-shopping-basket hvr-underline-reveal">
+			        <a class="nav-link" href="./shopping.html"><i class="fas fa-shopping-basket"></i>Đơn hàng<span class="badge badge-light">2</span></a>
 			      </li>
-			      <li class="nav-item dropdown ht-avatar" style="margin-left: 10px;">
+			      <li class="nav-item dropdown ht-avatar " style="margin-left: 10px;">
 			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			          <i class="fas fa-user"></i>Triều
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			          <a class="dropdown-item" href="#">Giỏ Hàng</a>
-			          <a class="dropdown-item" href="#">Sản phẩm yêu thích</a>
+			          <!-- <a class="dropdown-item" href="#">Sản phẩm yêu thích</a> -->
 			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#">Tài khoản</a>
-			          <a class="dropdown-item" href="home.html">Thoát</a>
+			          <a class="dropdown-item" href="./member-updateInfo.html">Tài khoản</a>
+			          <a class="dropdown-item" href="./home.html">Thoát</a>
 			        </div>
 			      </li>
 			    </ul>
 			  </div>
 			</nav>
 		</header>
+
 		<section style="padding-top: 62px;">
-		
 			<div class="ht-button">
 				<h4>TẠO NÊN CHIẾC ÁO CHỈ DÀNH CHO RIÊNG BẠN</h4>
 				<p>Giảm 20% với đơn hàng trên 30 áo</p>
-				<button class="btn ht-design-now">Thiết kế ngay</button>
+				<button class="btn ht-design-now button12">Thiết kế ngay</button>
 			</div>
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
@@ -88,19 +90,19 @@
 					<hr class="blue-line ht-first-blue" >
 					<p class="ht-step-label" >4 Bước đơn giản</p>
 					<hr class="blue-line ht-second-blue">
-					<div class="ht-step col-md-3 col-sm-12">
+					<div class="ht-step col-md-3 col-sm-12 hvr-grow">
 						<img src="img/step1.png" alt="">
 						<span>Chọn mẫu áo</span>
 					</div>
-					<div class="ht-step col-md-3 col-sm-12">
+					<div class="ht-step col-md-3 col-sm-12 hvr-grow">
 						<img src="img/step2.png" alt="">
 						<span>Tự do thiết kế</span>
 					</div>
-					<div class="ht-step col-md-3 col-sm-12">
+					<div class="ht-step col-md-3 col-sm-12 hvr-grow">
 						<img src="img/step3.png" alt="">
 						<span>Thanh toán</span>
 					</div>
-					<div class="ht-step col-md-3 col-sm-12">
+					<div class="ht-step col-md-3 col-sm-12 hvr-grow">
 						<img src="img/step4.png" alt="">
 						<span>Nhận áo</span>
 					</div>
@@ -112,31 +114,31 @@
 			<div class="row">
 				<aside class="ht-aside col-sm-3">
 					<form class="form-inline my-2 my-lg-0 ">
-				      <input id="ht-search" class="form-control ht-search-bar" type="search" placeholder="Tìm kiếm" aria-label="Search">
+				      <input id="ht-search" class="form-control ht-search-bar" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search" style="border-color: #ff6600">
 				    </form>
 					<ul class="ht-category">
 						<li class="ht-head-category">DANH MỤC SẢN PHẨM</li>
-						<a href="./shopping.html"><li class="ht-category-item">Áo cổ trụ</li></a>
-						<a href="./shopping.html"><li class="ht-category-item">Áo cổ tròn</li></a>
-						<a href="./shopping.html"><li class="ht-category-item">Áo thể thao</li></a>
-						<a href="./shopping.html"><li class="ht-category-item">Áo khoác</li></a>
-						<a href="./shopping.html"><li class="ht-category-item">Áo cặp</li></a>
-						<a href="./shopping.html"><li class="ht-category-item">Áo thun ba lỗ</li></a>
-						<a href="./shopping.html"><li class="ht-category-item">Sản phẩm khác</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Áo cổ trụ</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Áo cổ tròn</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Áo thể thao</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Áo khoác</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Áo cặp</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Áo thun ba lỗ</li></a>
+						<a href="./shopping.html"><li class="ht-category-item hvr-sweep-to-right">Sản phẩm khác</li></a>
 					</ul>
 					<h3 style="color: #0033ff; text-shadow: 2px 4px #e1e1e1; text-align: center;">
 						Tư vấn - <span style="color: #ff6600;">đặt áo</span>
 					</h3>
 					<div class="ht-contact">
-						<div class="ht-contact-item">
+						<div class="ht-contact-item hvr-buzz-out">
 							<img src="img/phone.png" style="padding-right: 10px;" alt="phone">
 							<span>016777 - Miễn phí</span>
 						</div>
-						<div class="ht-contact-item">
+						<div class="ht-contact-item hvr-grow">
 							<img src="img/chat.png" style="padding-right: 10px;" alt="chat">
 							<span>Chat với chúng tôi</span>
 						</div>
-						<div class="ht-contact-item">
+						<div class="ht-contact-item hvr-grow">
 							<img src="img/mail.png" style="padding-right: 10px;" alt="mail">
 							<span style="word-wrap: break-word">tuvan@freestyle.vn</span>
 						</div>
@@ -162,64 +164,112 @@
 					</div>
 					<div class="row" style=" padding-top: 40px;">
 						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample1.jpg" alt="Card image cap">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
 							  <div class="card-body">
 							    <p class="card-text ht-card-p">Áo thun cặp - I Love You</p>
 							  </div>
 							</a>
 						</div>
 						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample2.jpg" alt="Card image cap">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample2.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
 							  <div class="card-body">
 							    <p class="card-text ht-card-p">Áo thun cổ tròn - TSMT</p>
 							  </div>
 							</a>
 						</div>
 						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample3.jpg" alt="Card image cap">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample3.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
 							  <div class="card-body">
 							    <p class="card-text ht-card-p">Áo thun cổ tròn - Phượt thủ</p>
 							  </div>
 							</a>
 						</div>
 						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample4.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <p class="card-text ht-card-p">Áo thun cổ tròn - Phượt thủ</p>
-							  </div>
-							</a>
-						</div>
-						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample3.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <p class="card-text ht-card-p">Áo thun cổ tròn - Phượt thủ</p>
-							  </div>
-							</a>
-						</div>
-						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample4.jpg" alt="Card image cap">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample4.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
 							  <div class="card-body">
 							    <p class="card-text ht-card-p">Áo thun tay dài - Thư pháp</p>
 							  </div>
-						  	</a>
+							</a>
 						</div>
 						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample1.jpg" alt="Card image cap">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample3.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
+							  <div class="card-body">
+							    <p class="card-text ht-card-p">Áo thun cổ tròn - Phượt thủ</p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample4.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
+							  <div class="card-body">
+							    <p class="card-text ht-card-p">Áo thun tay dài - Thư pháp</p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
 							  <div class="card-body">
 							    <p class="card-text ht-card-p">Áo thun cặp - I Love You</p>
 							  </div>
 							</a>
 						</div>
 						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
-							<a href="./product.html">
-							  <img class="card-img-top ht-card-img" src="img/sample1.jpg" alt="Card image cap">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./member-product.html">Xem chi tiết</a>
+						        </div>
+						    </div>
+							<a href="./member-product.html">
 							  <div class="card-body">
 							    <p class="card-text ht-card-p">Áo thun cặp - I Love You</p>
 							  </div>
@@ -233,55 +283,9 @@
 				</section>
 			</div>
 		</div>
-		<div class="ht-support">
-			<i class="fas fa-envelope"></i>
-		</div>
-		<div class="container ht-support-chat">
-			    <div class="row">
-			        <div class="col-xs-12 ">
-			            <div class="panel panel-primary">
-			                <div class="panel-heading">
-			                    <span class="glyphicon glyphicon-comment">Tin nhắn</span>
-			                    <span class="pull-right ht-close-chat"><i class="fas fa-minus"></i></span> 
-			                </div>
-			                <div class="panel-body body-panel">
-			                    <ul class="chat" style="    padding: 5px;">
-			                        <li class="left clearfix">
-			                        	<span class="chat-img pull-left">
-			                            	<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
-			                       		</span>
-			                            <div class="chat-body clearfix">
-			                                <div class="header">
-			                                    <strontg class="primary-font">Hỗ trợ</strong> <small class="pull-right text-muted">
-			                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
-			                                </div>
-			                                <p>
-			                                    Xin chào! Nếu bạn quan tâm đến sản phẩm của FreeStyle.vn, hãy để lại lời nhắn, chúng mình sẽ trả lời ngay nhé!
-			                                </p>
-			                            </div>
-			                        </li>
-			                        <li class="right clearfix"><span class="chat-img pull-right">
-			                            <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
-			                        </span>
-			                            <div class="chat-body clearfix">
-			                                <div class="header">
-			                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
-			                                    <strong class="pull-right primary-font">Triều</strong>
-			                                </div>
-			                                <p>
-			                                    liu liu
-			                                </p>
-			                            </div>
-			                        </li>
-			                    </ul>
-			                </div>
-			                <div class="panel-footer clearfix">
-			                    <textarea class="form-control" style="height: 50px; border-radius: 0;" rows="3"></textarea>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
-			</div>
+		<!-- <div class="ht-support">
+			<a href=""><i class="fas fa-envelope"></i></a>
+		</div> -->
 		<footer>
 			<p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
 		</footer>

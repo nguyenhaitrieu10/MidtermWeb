@@ -51,4 +51,10 @@ $(document).ready(function(){
 		page = './member-' + page.split('html')[0] + 'html';
 		window.location.replace(page);
 	});
+
+
+	$('#ht-save-product').click(function(e){
+		e.preventDefault();
+		window.location.replace('./admin-product.html');
+	});
 });

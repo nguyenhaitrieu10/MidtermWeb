@@ -6428,3 +6428,8 @@ ul.dropdown-menu {
 a.dropdown-toggle::after{
   border-top: none;
 }
+
+div.icon{
+  font-size: 32px;
+  color: #fff;
+}

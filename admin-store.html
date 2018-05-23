@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Free Style</title>
+	<script src="js/popper.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/admin-home.css">
+	<script type="text/javascript" src="js/ht-script.js"></script>
+	<link rel="stylesheet" href="css/ht-style.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-button.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+</head>
+<body>
+  <div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="mother-grid-inner">
+            <!--header start here-->
+			<div class="header-main" style="padding: 0.5em;">
+				<div class="logo-w3-agile">
+					<a href="./admin-home.html"><img src="img/logo.png" style="height: 50px;"></a>
+				</div>
+				<div class="profile_details w3l" style="height: 70px; float: right;">		
+					<ul>
+						<li class="dropdown profile_details_drop">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+								<div class="profile_img">	
+									<span class="prfil-img" ><img style="background-color: #fff;" src="img/admin.png" alt=""> </span> 
+									<div class="user-name">
+										<p>Admin</p>
+									</div>
+									<div class="clearfix"></div>	
+								</div>	
+							</a>
+							<ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenuButton" style="text-align: center;">
+								<!-- <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>  -->
+								<li> <a href="./admin-user-info.html"> Tài khoản</a> </li> 
+								<li> <a href="./admin-login.html">Đăng xuất</a> </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				 <div class="w3layouts-right" style="height: 70px; float: right; background-color: #ff9501">
+					<div class="profile_details_left"><!--notifications of menu start -->
+						<ul class="nofitications-dropdown">
+							<li class="dropdown	 head-dpdn">
+								<a href="./admin-user.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-bell"></i>
+									<span class="badge blue">3</span>
+								</a>
+							</li>	
+							<li class="dropdown head-dpdn">
+								<a href="./admin-order.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-tasks"></i>
+									<span class="badge blue1">9</span>
+								</a>
+							</li>	
+							<div class="clearfix"> </div>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<!--notification menu end -->
+					<div class="clearfix"> </div>				
+				</div>
+			    <div class="clearfix"> </div>	
+			</div>
+			<!--heder end here-->
+<!-- 			<ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href=".html">Home</a><i class="fa fa-angle-right"></i>Tabels</li>
+            </ol> -->
+			<section class="container" style="margin-top: 15px; padding: 20px;">
+					<form class="form-inline my-2 my-lg-0" style="padding-bottom: 30px;">
+				      <input id="ht-search" class="form-control mr-sm-2 ht-search-shopping" type="search" placeholder="Tìm kiếm" aria-label="Search">
+				    </form>
+					<div class="row" style="margin-left: 10px; margin-right: 10px; padding-bottom: 10px; border-bottom: solid 0.5px darkgray;">
+						<div class="col-sm-4" style="font-weight: bold;">203 sản phẩm</div>
+						<div class="col-sm-5">
+							<button class="btn btn-secondary">Thêm sản phẩm</button>
+						</div>
+						<div class="col-sm-3" style="padding: 0;">
+							<div class="dropdown show" style="width: 100%; ">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%; padding: 0; border: solid 1px #ff6600;"> Sắp xếp theo </a>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width: 100%; text-align: center;">
+							    <a class="dropdown-item" href="#">Độ phổ biến</a>
+							    <a class="dropdown-item" href="#">Giá từ thấp đến cao</a>
+							    <a class="dropdown-item" href="#">Giá từ cao đến thấp</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style=" padding-top: 40px;">
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+						<div class="card col-lg-3 col-md-6  col-sm-12 ht-card">
+					        <div class="hovereffect">
+						        <img class="card-img-top ht-card-img img-responsive" src="img/sample1.jpg" alt="Card image cap">
+						        <div class="overlay">
+						           <h2>Free Style</h2>
+						           <a class="info" href="./admin-product.html">Sửa thông tin</a>
+						        </div>
+						    </div>
+							<a href="./admin-product.html">
+							  <div class="card-body">
+							    <p class="card-text-shopping">Áo thun cặp - I Love You</p>
+							    <p class="ht-info-cost"><strike>207.000đ</strike><span class="ht-saleoff">-30%</span><i class="ht-rating fas fa-heart">55</i></p>
+							    <p><span class="ht-cost">144.000 đ</span></p>
+							  </div>
+							</a>
+						</div>
+					</div>
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination justify-content-center">
+					    <li class="page-item disabled">
+					      <a class="page-link" href="#" tabindex="-1">Previous</a>
+					    </li>
+					    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item"><i class="fas fa-ellipsis-h" style="padding-top: 10px;"></i></li>
+					    <li class="page-item"><a class="page-link" href="#">7</a></li>
+					    <li class="page-item">
+					      <a class="page-link" href="#">Next</a>
+					    </li>
+					  </ul>
+					</nav>
+				</section>
+
+
+			<div class="copyrights">
+				 <p>&copy; 2018 Free Style . All Rights Reserved | Design by TMP team </p>
+			</div>	
+		</div>
+	</div>
+  <!--//content-inner-->
+
+		<!--/sidebar-menu-->
+	<div class="sidebar-menu">
+        <header class="logo1">
+            <h5 style="color: #fff; margin: 0;"> Quản lí </h5> 
+        </header>
+        <div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
+               <div class="menu">
+                    <ul id="menu" >
+                        <li><a href="./admin-home.html">
+                            <i class="fa fa-signal"></i> <span>Thống kê</span><div class="clearfix"></div></a>
+                        </li>
+                         <li id="menu-academico" >
+                            <a href="./admin-order.html"><i class="fas fa-th-list"></i></i><span>Đơn hàng</span><div class="clearfix"></div></a>
+                         </li>
+                        <li>
+                            <a href="./admin-store.html"><i class="fas fa-dolly-flatbed"></i><span>Kho sản phẩm</span><div class="clearfix"></div></a>
+                        </li>
+                        <li id="menu-academico" >
+                            <a href="./admin-user.html"><i class="fas fa-users"></i><span>Người dùng</span><div class="clearfix"></div></a>
+                        </li>
+                         <li id="menu-academico" >
+                            <a href="./admin-history.html"><i class="fas fa-history"></i><span>Lịch sử giao dịch</span><div class="clearfix"></div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="clearfix"></div>        
+    </div>
+</body>
+</html>

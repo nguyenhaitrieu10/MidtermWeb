@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free Style</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/ht-style.css">
+    <script type="text/javascript" src="js/hl-script.js"></script>
+    <script type="text/javascript" src="js/ht-script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="css/hl-style.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-button.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+</head>
+
+<body>
+    <div id="container">
+      <header id="ht-navbar">
+            <nav class="ht-navbar navbar navbar-expand-lg container">
+              <a class="navbar-brand" href="./member-home.html"><img id="ht-logo" src="img/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item hvr-underline-reveal">
+                    <a class="nav-link ht-current" href="./member-design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+                  </li>
+                  <li class="nav-item hvr-underline-reveal">
+                    <a class="nav-link" href="./member-shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
+                  </li>
+                  <li class="nav-item ht-shopping-basket hvr-underline-reveal">
+                    <a class="nav-link" href="./shopping.html"><i class="fas fa-shopping-basket"></i>Đơn hàng<span class="badge badge-light">2</span></a>
+                  </li>
+                  <li class="nav-item dropdown ht-avatar " style="margin-left: 10px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-user"></i>Triều
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Giỏ Hàng</a>
+                      <!-- <a class="dropdown-item" href="#">Sản phẩm yêu thích</a> -->
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./member-updateInfo.html">Tài khoản</a>
+                      <a class="dropdown-item" href="./home.html">Thoát</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </header>
+
+        <section>
+            <div id="hl-design" class="default">
+                <ul class="nav nav-tabs" role="tablist" width="100%">
+                    <li class="hl-tab hl-active-tab">
+                        <a href="#">ChooseShirt</a>
+                    </li>
+                    <li class="hl-tab">
+                        <a href="#">ChoosePhoto</a>
+                    </li>
+                    <li class="hl-tab">
+                        <a href="#">AddPhoto</a>
+                    </li>
+                </ul>
+
+                <div id="hl-menu">
+                    <div id="hl-menu-shirt" class="hl-active">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <img src="img/prev.png" class="hl-slide-menu">
+                                    </th>
+                                    <th>
+                                        <img src="img/p0.JPG" class="hl-slide-menu">
+                                    </th>
+                                    <th>
+                                        <img src="img/p1.JPG" class="hl-slide-menu">
+                                    </th>
+                                    <th>
+                                        <img src="img/p2.JPG" class="hl-slide-menu">
+                                    </th>
+                                    <th>
+                                        <img src="img/next.png" class="hl-slide-menu">
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="hl-menu-logo" class="hl-hidden">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <img src="img/prev.png" class="hl-slide-menu">
+                                    </th>
+                                    <th>
+                                        <img src="img/p15.png" class="hl-logo">
+                                    </th>
+                                    <th>
+                                        <img src="img/p16.png" class="hl-logo">
+                                    </th>
+                                    <th>
+                                        <img src="img/p17.png" class="hl-logo">
+                                    </th>
+                                    <th>
+                                        <img src="img/next.png" class="hl-slide-menu">
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="hl-menu-logo" class="hl-hidden">
+                        <input id="image" type="image" alt="Add image">
+                    </div>
+
+                </div>
+
+
+                <div class="hl-viewzone">
+                    <div id="hl-view-shirt">
+                        <img src="img\p0.JPG">
+                    </div>
+                    <div id="hl-view-logo">
+                        <img src="img\p16.png">
+                    </div>
+                    <ul class="nav nav-tabs hl-ctrls" role="tablist" width="100%">
+                        <li class="hl-ctrl">
+                            <img src="img\rotate.png">
+                        </li>
+                        <li class="hl-ctrl">
+                            <img src="img\zoomin.png">
+                        </li>
+                        <li class="hl-ctrl">
+                            <img src="img\zoomout.png">
+                        </li>
+                        <li class="hl-ctrl">
+                            <img src="img\reset.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hl-choose">
+                <div id="hl-choose-head">
+                    <p class="hl-choose-text">Lựa chọn sản phẩm</p>
+                </div>
+                <div id="hl-list-size">
+                    <div>
+                        <p class="hl-choose-text" style="padding-top: 15px;">Size</p>
+                    </div>
+
+                    <div id="hl-menu-size">
+                        <div style="float: right;">
+                            <p class="hl-size-text">S</p>
+                            <input id="s-size" type="number" class="hl-input-num">
+                        </div>
+                        <div style="float: right;">
+                            <p class="hl-size-text">M</p>
+                            <input id="m-size" type="number" class="hl-input-num">
+                        </div>
+                        <div style="float: right;">
+                            <p class="hl-size-text">L</p>
+                            <input id="l-size" type="number" class="hl-input-num">
+                        </div>
+                        <div style="float: right;">
+                            <p class="hl-size-text">XL</p>
+                                <input id="s-size" type="number" class="hl-input-num">
+                        </div>
+                        <div style="float: right;">
+                            <p class="hl-size-text">XXL</p>
+                            <input id="m-size" type="number" class="hl-input-num">
+                        </div>
+                        <div style="float: right;">
+                            <p class="hl-size-text">XXXL</p>
+                            <input id="l-size" type="number" class="hl-input-num">
+                        </div>
+                    </div>
+                    <div class="hl-count">
+                        <p class="hl-choose-text">Số lượng: </p>
+                        <p class="hl-choose-text" id="count"></p>
+                    </div>
+                </div>
+                <div class="hl-submit-box">
+                    <input class="hl-submit" type="submit" value="Mua ngay">
+                </div>
+            </div>
+            </p>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
+    </footer>
+
+</body>
+
+</html>
