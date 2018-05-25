@@ -2551,7 +2551,7 @@
         }
 
         var toolBox = find('tool-box');
-        toolBox.style.height = (innerHeight /* - toolBox.offsetTop - 77 */ ) + 'px';
+        // toolBox.style.height = (innerHeight /* - toolBox.offsetTop - 77 */ ) + 'px';
 
         function decorateDragLastPath() {
             var context = getContext('drag-last-path');

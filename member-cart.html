@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free Style</title>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/ht-script.js"></script>
+    <script type="text/javascript" src="js/hl-script.js"></script>
+    <script type="text/javascript" src="js/mm-script.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="css/mm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-button.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="ht-navbar" style="border-bottom: solid 1px;">
+            <nav class="ht-navbar navbar navbar-expand-lg container">
+                <a class="navbar-brand" href="./member-home.html">
+                    <img id="ht-logo" src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item hvr-underline-reveal">
+                            <a class="nav-link" href="./member-design.html">
+                                <i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+                        </li>
+                        <li class="nav-item hvr-underline-reveal">
+                            <a class="nav-link" href="./member-shopping.html">
+                                <i class="fas fa-shopping-cart"></i>Mua sắm</a>
+                        </li>
+                        <li class="nav-item ht-shopping-basket hvr-underline-reveal">
+                            <a class="nav-link" href="./shopping.html">
+                                <i class="fas fa-shopping-basket"></i>Đơn hàng
+                                <span class="badge badge-light">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown ht-avatar " style="margin-left: 10px;">
+                            <a class="nav-link dropdown-toggle" style="color: #007bff;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>Triều
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Giỏ Hàng</a>
+                                <!-- <a class="dropdown-item" href="#">Sản phẩm yêu thích</a> -->
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./member-updateInfo.html">Tài khoản</a>
+                                <a class="dropdown-item" href="./home.html">Thoát</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section style="margin-top: 0">
+            <div class="container justify-content-center">
+                <div class="cart-title">
+                    <h1>Giỏ hàng</h1>   
+                </div>
+
+                <div class="list-item list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="container mr-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="imageItem" src="img/p0.JPG" />
+                                </div>
+                                <div class="col-md-4">
+                                    <div>
+                                        Áo thun 01
+                                    </div>
+                                    <div>
+                                        Size XL
+                                    </div>
+                                    <span>Số lượng: </span>
+                                    <input class="amount" type="number" />
+                                </div>
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <span class="price-lable">250.000 VNĐ</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <button class="close-btn">
+                                        X
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="container mr-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="imageItem" src="img/p1.JPG" />
+                                </div>
+                                <div class="col-md-4">
+                                    <div>
+                                        Áo thun 02
+                                    </div>
+                                    <div>
+                                        Size M
+                                    </div>
+                                    <span>Số lượng: </span>
+                                    <input class="amount" type="number" />
+                                </div>
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <span class="price-lable">250.000 VNĐ</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <button>
+                                        X
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="total-info">
+                    <h4>Tổng giá tiền: </h4>
+                    <h4 class="overall-total-price">500.000 VNĐ</h4>
+                    <button class="payment btn btn-primary">Thanh toán</button>
+                    <button class="btn btn-outline-primary">Mua thêm</button>
+                </div>
+            </div>
+
+        </section>
+        <footer style="margin-top: 0;">
+            <p>Copyright &copy; 2018 freestyle.vn - Developed by TML Team</p>
+        </footer>
+    </div>
+</body>
+
+</html>

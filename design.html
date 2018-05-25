@@ -19,7 +19,7 @@
 </head>
 <body>
 
-  <div id="container">
+  <div id="container" class="container-design">
     <header id="ht-navbar">
       <nav class="ht-navbar navbar navbar-expand-lg container">
         <a class="navbar-brand" href="./home.html"><img id="ht-logo" src="img/logo.png" alt=""></a>
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item hvr-underline-reveal">
-              <a class="nav-link " href="./design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
+              <a class="nav-link ht-current " href="./design.html"><i class="fas fa-paint-brush"></i>Tự thiết kế</a>
             </li>
             <li class="nav-item hvr-underline-reveal">
               <a class="nav-link" href="./shopping.html"><i class="fas fa-shopping-cart"></i>Mua sắm</a>
@@ -138,13 +138,15 @@
     <!-- End Modal -->
 
     <section style="padding-top: 62px;">
-        <div id="widget-container" style="padding-top: 60px;bottom: 0;right: 20%;left: 20%;height: 700px;border: 1px solid black; border-top:0; border-bottom: 0; background-color: #e1e1e1;"></div>
+        <div id="widget-container" style="padding-top: 30px;bottom: 0;right: 20%;left: 20%;height: 700px;border: 1px solid black; border-top:0; border-bottom: 0; background-color: #e1e1e1;"></div>
 
         <div id="fade" class="black_overlay"></div>
 
         <div class="extra-controls">
-            <button id="export-as-image">Xuất ảnh</button>
-            <button id="btn-display-undo-popup">Phục hồi</button>
+            <button id="btn-display-undo-popup" class="hvr-outline-out" style="display: block; margin: 5px; float: right; border: none;"><i class="fas fa-undo"></i></button>
+            <button id="export-as-image" style="display: block; margin: 5px; visibility: hidden;">Xuất ảnh</button>
+            <button id="finish-design" style="display: block; margin: 5px; float: right; background-color: #ff6600;
+    color: #fff;" class="hvr-icon-fade hvr-bounce-in">Hoàn tất<i class="fa fa-check hvr-icon" style="padding: 5px;"></i> </button>
         </div>
 
         <div id="light" class="white_content">
@@ -162,7 +164,7 @@
 
             <br><br><br><br><br>
 
-            <button id="btn-undo" style="float:right;">Phục hồi</button>
+            <button id="btn-undo" style="float:right;">Xác nhận</button>
         </div>
 
         <div id="dataURL-popup" class="white_content">

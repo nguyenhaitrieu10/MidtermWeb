@@ -22,10 +22,6 @@ nav.ht-navbar.navbar.navbar-expand-lg{
 	padding-bottom: 0;
 }
 
-section {
-    margin-top: 50px;
-}
-
 footer{
 	height: 100px;
 	background-color: #343a40;
@@ -56,4 +52,44 @@ span.product-price {
     background-color: beige;
     color: tomato;
     font-weight: bold;
+}
+
+.total-info {
+	display: flex;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left: 10%;
+}
+
+.overall-total-price {
+	color: #db0b0b;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.payment {
+	margin-right: 20px;
+}
+
+.imageItem {
+	width: 100px;
+}
+
+.amount {
+	width: 50px; 
+	margin-left: 20px;
+}
+
+.cart-title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+}
+
+.price-lable {
+	font-size: 32px;
+}
+
+.list-item {
+	margin-left: 10%;
 }

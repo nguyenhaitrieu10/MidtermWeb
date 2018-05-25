@@ -14,7 +14,7 @@ designer.setTools({
     text: true,
     image: true,
     eraser: false,
-    line: false,
+    line: true,
     arrow: false,
     dragSingle: true,
     dragMultiple: false,
