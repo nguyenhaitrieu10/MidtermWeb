@@ -288,3 +288,59 @@ input {
   border: solid 1px;
   border-radius: 5px;
 }
+.hl-col-update{
+  margin: 0 5%; 
+  width: 35%;
+}
+.hl-error{
+  color : red;
+  font-size: 10pt;   
+}
+.hl-price{
+  color: red;
+  float: left;
+  font-size: 15pt;   
+}
+
+.hl-tab-state{
+  border-style:solid;
+  border-radius: 5px;
+  border-width: 1px; 
+  border-color:silver;
+  background-color: seashell;
+  margin: 3%;
+}
+.hl-list-state{
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right:10%;
+  padding: 0;
+}
+.hl-caption-state{
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.hl-element-state{
+  padding-left: 8%;
+}
+.hl-id-state{
+  font-weight: bold;
+}
+.hl-accept-state{
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 1%;
+}
+.hl-comming-state{
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 1%;
+}
+.hl-cancel-state{
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 1%;
+}
