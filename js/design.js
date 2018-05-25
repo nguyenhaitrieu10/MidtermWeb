@@ -13,13 +13,13 @@ designer.setTools({
     pencil: false,
     text: true,
     image: true,
-    eraser: true,
-    line: true,
+    eraser: false,
+    line: false,
     arrow: false,
     dragSingle: true,
-    dragMultiple: true,
-    arc: true,
-    rectangle: true,
+    dragMultiple: false,
+    arc: false,
+    rectangle: false,
     quadratic: false,
     bezier: false,
     marker: false,
@@ -142,9 +142,3 @@ if (localStorage.getItem('data-url-format')) {
     dataURLFormat.value = localStorage.getItem('data-url-format');
     dataURLFormat.onchange();
 }
-
-
-    $('#main-canvas').attr('height','100px');
-    $('#main-canvas').attr('width','100px');
-    $('#temp-canvas').attr('height','100px');
-    $('#temp-canvas').attr('width','100px');
