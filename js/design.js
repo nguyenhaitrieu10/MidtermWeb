@@ -142,3 +142,12 @@ if (localStorage.getItem('data-url-format')) {
     dataURLFormat.value = localStorage.getItem('data-url-format');
     dataURLFormat.onchange();
 }
+
+$('#finish-design').click(function(){
+    alert('Hãy đăng nhập để mua hàng! Đăng ký ngay Nếu bạn chưa có tài khoản');
+    $('.header-login').trigger('click');
+});
+
+$('#finish-design-member').click(function(){
+    window.location.replace("member-product.html");
+});

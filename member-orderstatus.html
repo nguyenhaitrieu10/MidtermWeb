@@ -16,6 +16,7 @@
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" href="css/mm-style.css">
   <link rel="stylesheet" href="css/hl-style.css">
+  <link rel="stylesheet" href="css/ht-style.css">
   <link rel="stylesheet" type="text/css" href="css/hover-button.css">
   <link rel="stylesheet" href="css/hover-min.css">
 </head>
@@ -44,9 +45,9 @@
                 <i class="fas fa-shopping-cart"></i>Mua sắm</a>
             </li>
             <li class="nav-item ht-shopping-basket hvr-underline-reveal">
-              <a class="nav-link" href="./shopping.html">
+              <a class="nav-link ht-current" href="./shopping.html">
                 <i class="fas fa-shopping-basket"></i>Đơn hàng
-                <span class="badge badge-light">2</span>
+                <span class="badge badge-light">1</span>
               </a>
             </li>
             <li class="nav-item dropdown ht-avatar " style="margin-left: 10px;">
@@ -55,7 +56,7 @@
                 <i class="fas fa-user"></i>Triều
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Giỏ Hàng</a>
+                <a class="dropdown-item" href="member-orderstatus.html">Giỏ Hàng</a>
                 <!-- <a class="dropdown-item" href="#">Sản phẩm yêu thích</a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="./member-updateInfo.html">Tài khoản</a>
@@ -66,7 +67,7 @@
         </div>
       </nav>
     </header>
-    <section style="margin-top: 0">
+    <section style="padding-top: 60px">
       <h3 style="margin-left: 10%;margin-top: 2%;">Danh sách đơn hàng</h3>
       <div class="hl-list-state">
         <div class="hl-tab-state">
@@ -74,23 +75,11 @@
             <tr>
               <td class="hl-element-state hl-id-state">Mã đơn hàng:</td>
               <td>A2203</td>
-              <td rowspan="9"><img src="img\sample3.jpg" style="zoom: 80%"></td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Mặt hàng:</td>
-              <td>Áo Thun U KiriMaru Basic </td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state"></td>
-              <td>đ80.000</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Số lượng:</td>
-              <td>x2</td>
+              <td rowspan="9"><a class="btn btn-primary" style="color:#fff;" href="member-cart.html">Xem chi tiết</a></td>
             </tr>
             <tr>
               <td class="hl-element-state">Tổng thanh toán:</td>
-              <td style="color: red">đ160.000</td>
+              <td style="color: red">500.000 VNĐ</td>
             </tr>
             <tr>
               <td class="hl-element-state">Địa chỉ:</td>
@@ -113,19 +102,7 @@
             <tr>
               <td class="hl-element-state hl-id-state">Mã đơn hàng:</td>
               <td>A2003</td>
-              <td rowspan="9"><img src="img\sample1.jpg" style="zoom: 80%"></td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Mặt hàng:</td>
-              <td>Áo thun nam trắng</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state"></td>
-              <td>đ100.000</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Số lượng:</td>
-              <td>x1</td>
+              <td rowspan="9"><a class="btn btn-primary" style="color:#fff;" href="member-cart.html">Xem chi tiết</a></td>
             </tr>
             <tr>
               <td class="hl-element-state">Tổng thanh toán:</td>
@@ -152,35 +129,11 @@
             <tr>
               <td class="hl-element-state hl-id-state">Mã đơn hàng:</td>
               <td>A0213</td>
-              <td rowspan="9"><img src="img\sample4.jpg" style="zoom: 80%"></td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Mặt hàng:</td>
-              <td>Áo Thun Nam No Style Basic</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state"></td>
-              <td>đ90.000</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Số lượn:</td>
-              <td>x1</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Mặt hàng:</td>
-              <td>Áo Thun Nữ No Style Basic</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state"></td>
-              <td>đ90.000</td>
-            </tr>
-            <tr>
-              <td class="hl-caption hl-element-state">Số lượng:</td>
-              <td>x2</td>
-            </tr>
+              <td rowspan="9"><a class="btn btn-primary" style="color:#fff;" href="member-cart.html">Xem chi tiết</a></td>
+            </tr> 
             <tr>
               <td class="hl-element-state">Tổng thanh toán:</td>
-              <td style="color: red">đ270.000</td>
+              <td style="color: red">270.000 VNĐ</td>
             </tr>
             <tr>
               <td class="hl-element-state">Địa chỉ:</td>

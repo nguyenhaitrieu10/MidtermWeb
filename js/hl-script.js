@@ -45,7 +45,7 @@ function changexx() {
 
 function subUpdate() {
 	alert("Thông tin đã được thay đổi!");
-	window.location="home.html";
+	// window.location="home.html";
 }
 
 function checkOldPass() {
@@ -91,3 +91,4 @@ function changPass(){
 	alert("Mật khẩu đã được thay đổi!");
 	window.location="home.html";
 }
+

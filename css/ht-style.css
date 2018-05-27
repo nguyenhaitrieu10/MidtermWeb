@@ -663,3 +663,6 @@ transform:translatey(0);
 transition-delay:.2s;
 }
 
+td{
+	text-align: center;
+}

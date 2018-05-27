@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/table-style.css" />
 	<link rel="stylesheet" type="text/css" href="css/basictable.css" />
 	<script type="text/javascript" src="js/Chart.js"></script>
+	<script type="text/javascript" src="js/ht-script.js"></script>
 </head>
 <body>
   <div class="page-container">
@@ -38,14 +39,13 @@
 							</a>
 							<ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenuButton" style="text-align: center;">
 								<!-- <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>  -->
-								<li> <a href="./admin-user-info.html"> Tài khoản</a> </li> 
 								<li> <a href="./admin-login.html">Đăng xuất</a> </li>
 							</ul>
 						</li>
 					</ul>
 				</div>
-				 <div class="w3layouts-right" style="height: 70px; float: right; background-color: #ff9501">
-					<div class="profile_details_left"><!--notifications of menu start -->
+				 <div class="w3layouts-right" style="height: 70px; float: right; background-color: #ff9501;display: none;">
+					<div class="profile_details_left">
 						<ul class="nofitications-dropdown">
 							<li class="dropdown	 head-dpdn">
 								<a href="./admin-user.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -101,7 +101,7 @@
 							<td>F03445</td>
 							<td>14:00 22/05/2018</td>
 							<td>350.000</td>
-							<td><button class="btn btn-primary">Chi tiết</button></td>
+							<td><button class="btn btn-primary admin-detail-order">Chi tiết</button></td>
 						  </tr>
 						  <tr>
 							<td>Huỳnh Anh</td>
@@ -109,7 +109,7 @@
 							<td>B23411</td>
 							<td>8:30 18/05/2018	</td>
 							<td>99.000</td>
-							<td><button class="btn btn-primary">Chi tiết</button></td>
+							<td><button class="btn btn-primary admin-detail-order">Chi tiết</button></td>
 						  </tr>
 						  <tr>
 							<td>Thiên Bảo</td>
@@ -117,7 +117,7 @@
 							<td>C001F8</td>
 							<td>20:55 22/05/2018</td>
 							<td>150.000</td>
-							<td><button class="btn btn-primary">Chi tiết</button></td>
+							<td><button class="btn btn-primary admin-detail-order">Chi tiết</button></td>
 						  </tr>
 						  <tr>
 							<td>Thiên Bảo</td>
@@ -125,7 +125,7 @@
 							<td>C001F8</td>
 							<td>20:55 22/05/2018</td>
 							<td>150.000</td>
-							<td><button class="btn btn-primary">Chi tiết</button></td>
+							<td><button class="btn btn-primary admin-detail-order">Chi tiết</button></td>
 						  </tr>
 						  <tr>
 							<td>Thiên Bảo</td>
@@ -133,7 +133,7 @@
 							<td>C001F8</td>
 							<td>20:55 22/05/2018</td>
 							<td>150.000</td>
-							<td><button class="btn btn-primary">Chi tiết</button></td>
+							<td><button class="btn btn-primary admin-detail-order">Chi tiết</button></td>
 						  </tr>
 						</tbody>
 					  </table>
@@ -153,10 +153,10 @@
 
 					  <div style="color: #ff4a43;font-size: 30px;" class="sm-col-3">3 đơn hàng</div>
 					  </div>
-					    <table id="table">
+					    <table id="table2">
 						<thead>
 						  <tr>
-							<th>Khách hàng</th>
+							<th >Khách hàng</th>
 							<th>Giới tính</th>
 							<th>Mã đơn hàng</th>
 							<th>Thời gian</th>
@@ -171,7 +171,7 @@
 							<td>F03445</td>
 							<td>14:00 22/05/2018</td>
 							<td>350.000</td>
-							<td><button class="btn btn-primary" style="margin-right: 5px;">Chi tiết</button><button class="btn btn-success">Hoàn tất</button></td>
+							<td><!-- <button class="btn btn-primary admin-detail-order" style="margin-right: 5px;">Chi tiết</button> --><button class="btn btn-success admin-delivered">Hoàn tất</button></td>
 						  </tr>
 						  <tr>
 							<td>Huỳnh Anh</td>
@@ -179,7 +179,7 @@
 							<td>B23411</td>
 							<td>8:30 18/05/2018	</td>
 							<td>99.000</td>
-							<td><button class="btn btn-primary" style="margin-right: 5px;">Chi tiết</button><button class="btn btn-success">Hoàn tất</button></td>
+							<td><!-- <button class="btn btn-primary admin-detail-order" style="margin-right: 5px;">Chi tiết</button> --><button class="btn btn-success admin-delivered">Hoàn tất</button></td>
 						  </tr>
 						  <tr>
 							<td>Thiên Bảo</td>
@@ -187,7 +187,7 @@
 							<td>C001F8</td>
 							<td>20:55 22/05/2018</td>
 							<td>150.000</td>
-							<td><button class="btn btn-primary" style="margin-right: 5px;">Chi tiết</button><button class="btn btn-success">Hoàn tất</button></td>
+							<td><!-- <button class="btn btn-primary admin-detail-order" style="margin-right: 5px;">Chi tiết</button> --><button class="btn btn-success admin-delivered">Hoàn tất</button></td>
 						  </tr>
 						</tbody>
 					  </table>
@@ -223,7 +223,7 @@
                         <li id="menu-academico" >
                             <a href="./admin-user.html"><i class="fas fa-users"></i><span>Người dùng</span><div class="clearfix"></div></a>
                         </li>
-                         <li id="menu-academico" >
+                         <li id="menu-academico" style="display: none;">
                             <a href="./admin-history.html"><i class="fas fa-history"></i><span>Lịch sử giao dịch</span><div class="clearfix"></div></a>
                         </li>
                     </ul>
